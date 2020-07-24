@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block foo %}
+{% if any(letter.islower() for letter in username)%}
+{% else %}
+<h1>needs a lowercase letter</h1>
+{% endif %}
+
+{% endblock %}
